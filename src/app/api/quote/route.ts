@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { headers } from "next/headers";
 import nodemailer from "nodemailer";
+import { QuoteItem } from "@/types";
 
 // In-memory rate limiting map: IP -> timestamp arrays
 const ipInquiries = new Map<string, number[]>();
@@ -86,7 +87,7 @@ export async function POST(request: Request) {
 
     const itemsHtml = items
       .map(
-        (item: any) => `
+        (item: QuoteItem) => `
         <tr style="border-bottom: 1px solid #E4E2DC;">
           <td style="padding: 12px; font-family: sans-serif; font-size: 14px; color: #1A1A1A;"><strong>${item.product.name}</strong></td>
           <td style="padding: 12px; font-family: monospace; font-size: 14px; color: #C8A96E; text-align: center;">${item.quantity}</td>
@@ -157,7 +158,7 @@ export async function POST(request: Request) {
       message: "Quote inquiry email dispatched successfully.",
       leadId: `SRI-${Date.now().toString().slice(-6)}`,
     });
-  } catch (err: any) {
+  } catch (err) {
     console.error("API route error:", err);
     return NextResponse.json(
       { error: "Internal Server Error occurred during dispatching." },

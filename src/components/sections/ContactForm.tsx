@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { categories } from "@/data/categories";
-import { MapPin, Phone, Mail, Globe, MessageCircle, Send, CheckCircle } from "lucide-react";
+import { MapPin, Phone, Mail, MessageCircle, Send, CheckCircle } from "lucide-react";
 
 export const ContactForm: React.FC = () => {
   const [loading, setLoading] = useState(false);

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, { createContext, useContext, useState } from "react";
 import { Product, QuoteItem } from "@/types";
 
 interface QuoteCartContextType {
@@ -17,20 +17,20 @@ interface QuoteCartContextType {
 const QuoteCartContext = createContext<QuoteCartContextType | undefined>(undefined);
 
 export const QuoteCartProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [cart, setCart] = useState<QuoteItem[]>([]);
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
-  // Hydrate cart from localStorage on mount
-  useEffect(() => {
-    const savedCart = localStorage.getItem("srihans_quote_cart");
-    if (savedCart) {
-      try {
-        setCart(JSON.parse(savedCart));
-      } catch (e) {
-        console.error("Failed to parse quote cart storage", e);
+  const [cart, setCart] = useState<QuoteItem[]>(() => {
+    if (typeof window !== "undefined") {
+      const savedCart = localStorage.getItem("srihans_quote_cart");
+      if (savedCart) {
+        try {
+          return JSON.parse(savedCart);
+        } catch (e) {
+          console.error("Failed to parse quote cart storage", e);
+        }
       }
     }
-  }, []);
+    return [];
+  });
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   // Save cart to localStorage on updates
   const saveCart = (newCart: QuoteItem[]) => {

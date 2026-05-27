@@ -10,7 +10,7 @@ import { BackToTop } from "@/components/BackToTop";
 import { MobileCTA } from "@/components/MobileCTA";
 import { QuoteCartDrawer } from "@/components/QuoteCartDrawer";
 import { ProductActions } from "@/components/ProductActions";
-import { ArrowLeft, Star, ArrowRight, ShieldCheck, HelpCircle } from "lucide-react";
+import { ArrowLeft, Star, ArrowRight, ShieldCheck } from "lucide-react";
 
 interface ProductPageProps {
   params: Promise<{

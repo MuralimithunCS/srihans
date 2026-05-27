@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useQuoteCart } from "@/context/QuoteCartContext";
 import { categories } from "@/data/categories";
 import { products } from "@/data/products";
-import { Product } from "@/types";
 import {
   Search,
   MessageCircle,
@@ -13,8 +12,6 @@ import {
   Menu,
   X,
   ChevronDown,
-  Layout,
-  Layers,
   ArrowRight,
 } from "lucide-react";
 
@@ -24,7 +21,6 @@ export const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-  const [searchResults, setSearchResults] = useState<Product[]>([]);
   const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
 
   // Monitor page scroll to update header styles
@@ -40,20 +36,15 @@ export const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Filter search matches across name and description
-  useEffect(() => {
-    if (searchQuery.trim().length > 1) {
-      const query = searchQuery.toLowerCase();
-      const matched = products.filter(
+  // Filter search matches across name and description dynamically
+  const query = searchQuery.trim().toLowerCase();
+  const searchResults = query.length > 1
+    ? products.filter(
         (p) =>
           p.name.toLowerCase().includes(query) ||
           p.shortDescription.toLowerCase().includes(query)
-      );
-      setSearchResults(matched.slice(0, 5));
-    } else {
-      setSearchResults([]);
-    }
-  }, [searchQuery]);
+      ).slice(0, 5)
+    : [];
 
   const waNumber = process.env.NEXT_PUBLIC_WA_NUMBER || "916363847274";
   const waUrl = `https://wa.me/${waNumber}?text=Hi%20Srihans%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20office%20furniture.`;
