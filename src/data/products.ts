@@ -10,7 +10,7 @@ export const products: Product[] = [
     specs: { material: "Metal frame, wooden tops", layout: "Linear sharing", screenType: "Fabric divider" },
     tags: ["workstation", "linear", "colors"],
     featured: true,
-    image: "",
+    image: "/catalog/page_3_img_2.png",
     price: 0
   },
   {
@@ -21,7 +21,7 @@ export const products: Product[] = [
     specs: { material: "Powder coated metal, MDF board", layout: "Island sharing", partitions: "Sound-absorbing fabric" },
     tags: ["workstation", "sharing", "linear"],
     featured: false,
-    image: "",
+    image: "/catalog/page_3_img_4.png",
     price: 0
   },
   {
@@ -32,7 +32,7 @@ export const products: Product[] = [
     specs: { material: "Pre-laminated particle board, steel legs", layout: "L-Shape corner", sideUnits: "Integrated pedestal option" },
     tags: ["workstation", "l-shape", "colors"],
     featured: true,
-    image: "",
+    image: "/catalog/page_4_img_2.png",
     price: 0
   },
   {
@@ -43,7 +43,7 @@ export const products: Product[] = [
     specs: { material: "Triangular metal legs, particle board", layout: "120-degree hex cluster", privacy: "Curved center screens" },
     tags: ["workstation", "120-degree", "honeycomb"],
     featured: false,
-    image: "",
+    image: "/catalog/page_4_img_4.png",
     price: 0
   },
   {
@@ -54,7 +54,7 @@ export const products: Product[] = [
     specs: { material: "Aluminum trims, laminate tops", layout: "Modular linear", wireManagement: "Under-desk raceway" },
     tags: ["workstation", "collage", "modular"],
     featured: true,
-    image: "",
+    image: "/catalog/page_5_img_2.png",
     price: 0
   },
   {
@@ -65,7 +65,7 @@ export const products: Product[] = [
     specs: { material: "Aluminum structural posts, wood", layout: "Back-to-back island", divider: "Frosted glass panels" },
     tags: ["workstation", "collage", "sharing"],
     featured: false,
-    image: "",
+    image: "/catalog/page_5_img_4.png",
     price: 0
   },
   {
@@ -76,7 +76,7 @@ export const products: Product[] = [
     specs: { material: "Aluminum framing, wooden desk tops", layout: "L-Shape modular", storage: "Attached drawer cabinet" },
     tags: ["workstation", "collage", "l-shape"],
     featured: true,
-    image: "",
+    image: "/catalog/page_6_img_2.png",
     price: 0
   },
   {
@@ -87,7 +87,7 @@ export const products: Product[] = [
     specs: { material: "Metal structures, pre-lam tops", layout: "4-Person L-Cluster", privacy: "Surround screens" },
     tags: ["workstation", "collage", "quad-sharing"],
     featured: false,
-    image: "",
+    image: "/catalog/page_6_img_4.png",
     price: 0
   },
   {
@@ -98,7 +98,7 @@ export const products: Product[] = [
     specs: { material: "32mm aluminum frame screens, board tops", layout: "Linear row", profileThickness: "32mm" },
     tags: ["workstation", "trim-32", "panel"],
     featured: false,
-    image: "",
+    image: "/catalog/page_7_img_2.png",
     price: 0
   },
   {
@@ -109,7 +109,7 @@ export const products: Product[] = [
     specs: { material: "32mm screen partitions, metal frames", layout: "Back-to-back rows", screens: "Fabric pinboard" },
     tags: ["workstation", "trim-32", "sharing"],
     featured: false,
-    image: "",
+    image: "/catalog/page_7_img_4.png",
     price: 0
   },
   {
@@ -120,7 +120,7 @@ export const products: Product[] = [
     specs: { material: "50mm modular tile frame, wood", layout: "Individual L-Shape", cabling: "Double raceway channels" },
     tags: ["workstation", "trim-50", "tile-based"],
     featured: false,
-    image: "",
+    image: "/catalog/page_8_img_2.png",
     price: 0
   },
   {
@@ -131,7 +131,7 @@ export const products: Product[] = [
     specs: { material: "75mm thick screen frame, wood board", layout: "L-Shape sharing", acoustics: "Thick acoustic tiles" },
     tags: ["workstation", "trim-75", "acoustic"],
     featured: false,
-    image: "",
+    image: "/catalog/page_8_img_4.png",
     price: 0
   },
   {
@@ -142,7 +142,7 @@ export const products: Product[] = [
     specs: { material: "Steel support framework, laminate", layout: "75-degree chevron", screenType: "High-density foam screen" },
     tags: ["workstation", "trim-75", "angled"],
     featured: false,
-    image: "",
+    image: "/catalog/page_9_img_2.png",
     price: 0
   },
   {
@@ -153,7 +153,7 @@ export const products: Product[] = [
     specs: { material: "Aluminum framework, board desks", layout: "70 to 120 degree adjustable", flexibility: "Multi-angle joint posts" },
     tags: ["workstation", "trim", "flexible"],
     featured: false,
-    image: "",
+    image: "/catalog/page_9_img_4.png",
     price: 0
   },
 
@@ -166,7 +166,7 @@ export const products: Product[] = [
     specs: { material: "Premium veneer, leather pad overlay", layout: "L-shape credenza set", drawers: "Soft-close lockable" },
     tags: ["executive", "ceo", "cabin", "table"],
     featured: true,
-    image: "",
+    image: "/catalog/page_12_img_1.jpg",
     price: 0
   },
   {
@@ -177,7 +177,7 @@ export const products: Product[] = [
     specs: { material: "High-density fiberboard, melamine", layout: "Straight desk + side cabinet", cableAccess: "Grommet caps" },
     tags: ["executive", "manager", "cabin", "table"],
     featured: false,
-    image: "",
+    image: "/catalog/page_12_img_3.png",
     price: 0
   },
   {
@@ -188,7 +188,7 @@ export const products: Product[] = [
     specs: { material: "MDF core, glossy lacquer coating", layout: "Curved front profile", panels: "Decorative gold striping" },
     tags: ["executive", "inspiring", "premium"],
     featured: true,
-    image: "",
+    image: "/catalog/page_12_img_4.png",
     price: 0
   },
   {
@@ -199,7 +199,7 @@ export const products: Product[] = [
     specs: { material: "Dual-motor steel frame, wood top", range: "650mm to 1250mm adjustment", panelPresets: "4 memory codes" },
     tags: ["executive", "freedom", "sit-stand", "ergonomic"],
     featured: false,
-    image: "",
+    image: "/catalog/page_12_img_5.png",
     price: 0
   },
   {
@@ -210,7 +210,7 @@ export const products: Product[] = [
     specs: { material: "Veneer surface, acrylic light strip", layout: "Linear straight", aesthetic: "Fitted LED channels" },
     tags: ["executive", "glow", "led"],
     featured: false,
-    image: "",
+    image: "/catalog/page_13_img_2.png",
     price: 0
   },
   {
@@ -221,7 +221,7 @@ export const products: Product[] = [
     specs: { material: "Powder coated angular steel, MDF board", layout: "Linear desk", edgeType: "Chamfered border" },
     tags: ["executive", "glad", "minimalist"],
     featured: false,
-    image: "",
+    image: "/catalog/page_13_img_4.png",
     price: 0
   },
   {
@@ -232,7 +232,7 @@ export const products: Product[] = [
     specs: { material: "Teak finish board, metal handles", layout: "Block base frame", lock: "Central key" },
     tags: ["executive", "omega", "traditional"],
     featured: false,
-    image: "",
+    image: "/catalog/page_14_img_2.png",
     price: 0
   },
   {
@@ -243,7 +243,7 @@ export const products: Product[] = [
     specs: { material: "Veneer paneling, round steel columns", layout: "Oval shaped", seatingCap: "4-6 persons" },
     tags: ["executive", "oval", "discussion"],
     featured: false,
-    image: "",
+    image: "/catalog/page_14_img_4.png",
     price: 0
   },
 
@@ -256,7 +256,7 @@ export const products: Product[] = [
     specs: { material: "High grade wood veneer, iron support", layout: "Rectangular modular", wireBox: "Flip-top multi-plug sockets" },
     tags: ["conference", "boardroom", "meeting"],
     featured: true,
-    image: "",
+    image: "/catalog/page_10_img_2.png",
     price: 0
   },
   {
@@ -267,7 +267,7 @@ export const products: Product[] = [
     specs: { material: "Melamine board, cross metal pedestal", layout: "Round shape", diameter: "900mm to 1200mm" },
     tags: ["conference", "meeting", "round"],
     featured: false,
-    image: "",
+    image: "/catalog/page_10_img_4.png",
     price: 0
   },
   {
@@ -278,7 +278,7 @@ export const products: Product[] = [
     specs: { material: "Tempered glass, chrome framework legs", layout: "Glass top rectangular", base: "Chrome steel" },
     tags: ["conference", "glass", "modern"],
     featured: false,
-    image: "",
+    image: "/catalog/page_11_img_2.png",
     price: 0
   },
   {
@@ -289,7 +289,7 @@ export const products: Product[] = [
     specs: { material: "Solid colored laminates, wooden base", layout: "Semi-oval rows", centerTrack: "Open tray wiring" },
     tags: ["conference", "berry", "creative"],
     featured: false,
-    image: "",
+    image: "/catalog/page_11_img_4.png",
     price: 0
   },
   {
@@ -300,7 +300,7 @@ export const products: Product[] = [
     specs: { material: "Curved laminate board sections", layout: "U-Shape / Boat-Shape board", panelBase: "Wooden slab bases" },
     tags: ["conference", "curved", "boat-shape"],
     featured: false,
-    image: "",
+    image: "/catalog/page_10_img_2.png",
     price: 0
   },
   {
@@ -311,7 +311,7 @@ export const products: Product[] = [
     specs: { material: "Thick wood board blocks", layout: "Solid block pedestal", color: "Dark Charcoal / Mahogany" },
     tags: ["conference", "block", "traditional"],
     featured: false,
-    image: "",
+    image: "/catalog/page_10_img_4.png",
     price: 0
   },
 
@@ -324,7 +324,7 @@ export const products: Product[] = [
     specs: { material: "Leatherette upholstery, solid wood internals", configuration: "3+1 seating layout", legs: "Chrome poles" },
     tags: ["sofa", "lounge", "lido"],
     featured: true,
-    image: "",
+    image: "/catalog/page_28_img_1.jpg",
     price: 0
   },
   {
@@ -335,7 +335,7 @@ export const products: Product[] = [
     specs: { material: "Heavy-duty black leatherite, slab foam", layout: "Structured square blocks", frame: "Chrome bottom ring" },
     tags: ["sofa", "lounge", "lido-2"],
     featured: false,
-    image: "",
+    image: "/catalog/page_28_img_2.jpg",
     price: 0
   },
   {
@@ -346,7 +346,7 @@ export const products: Product[] = [
     specs: { material: "Soft woven fabric padding, oak base frame", styling: "Casual modern", colorOptions: "Grey / Teal / Indigo" },
     tags: ["sofa", "lounge", "fabric"],
     featured: false,
-    image: "",
+    image: "/catalog/page_28_img_3.jpg",
     price: 0
   },
   {
@@ -357,7 +357,7 @@ export const products: Product[] = [
     specs: { material: "Cashmere felt fabric, wood base", backrest: "Ergonomic tub seat", baseType: "4-legged ash wood" },
     tags: ["lounge", "mollis", "chair"],
     featured: true,
-    image: "",
+    image: "/catalog/page_28_img_4.jpg",
     price: 0
   },
   {
@@ -368,7 +368,7 @@ export const products: Product[] = [
     specs: { material: "Patchwork textile upholstery", base: "Chrome cross legs", padding: "Molded cushion foam" },
     tags: ["lounge", "accent", "colors"],
     featured: false,
-    image: "",
+    image: "/catalog/page_28_img_5.jpg",
     price: 0
   },
   {
@@ -379,7 +379,7 @@ export const products: Product[] = [
     specs: { material: "Upholstered rexine, chrome pipes", layout: "Quadro cubic", arms: "Padded arm caps" },
     tags: ["lounge", "quadro", "cubical"],
     featured: false,
-    image: "",
+    image: "/catalog/page_28_img_6.jpg",
     price: 0
   },
   {
@@ -390,7 +390,7 @@ export const products: Product[] = [
     specs: { material: "Padded shell, round metal base plate", rotate: "360-degree swivel", backrest: "Low-back circular shell" },
     tags: ["lounge", "orbit", "swivel"],
     featured: false,
-    image: "",
+    image: "/catalog/page_29_img_1.jpg",
     price: 0
   },
   {
@@ -401,7 +401,7 @@ export const products: Product[] = [
     specs: { material: "Deep cushioning, velvet surface fabric", legs: "Splayed iron wireframe legs", posture: "Reclining comfort" },
     tags: ["lounge", "snug", "cozy"],
     featured: false,
-    image: "",
+    image: "/catalog/page_29_img_2.jpg",
     price: 0
   },
   {
@@ -412,7 +412,7 @@ export const products: Product[] = [
     specs: { material: "Molded polyurethane frame, wool fabric", base: "Oakwood legs", structure: "Integrated arm-back shell" },
     tags: ["lounge", "swoon", "designer"],
     featured: false,
-    image: "",
+    image: "/catalog/page_29_img_3.jpg",
     price: 0
   },
   {
@@ -423,7 +423,7 @@ export const products: Product[] = [
     specs: { material: "Fabric cover, solid wood base frame", structure: "Backless block stool", joinery: "Modular ganging clips" },
     tags: ["lounge", "uni", "stool"],
     featured: false,
-    image: "",
+    image: "/catalog/page_29_img_4.jpg",
     price: 0
   },
   {
@@ -434,7 +434,7 @@ export const products: Product[] = [
     specs: { material: "Leather padding, wooden accents", base: "Four star glide base", rotate: "Swivel return cylinder" },
     tags: ["lounge", "costa", "visitor"],
     featured: false,
-    image: "",
+    image: "/catalog/page_29_img_6.png",
     price: 0
   },
   {
@@ -445,7 +445,7 @@ export const products: Product[] = [
     specs: { material: "Heavy fabric wrap, steel interior structure", layout: "Tub arm chair", cushion: "Loose scatter pillow" },
     tags: ["lounge", "cuba", "tub"],
     featured: false,
-    image: "",
+    image: "/catalog/page_29_img_8.png",
     price: 0
   },
   {
@@ -456,7 +456,7 @@ export const products: Product[] = [
     specs: { material: "Premium PU leather coat, metal base", type: "Chaise lounge daybed", angle: "Fixed tilt posture" },
     tags: ["lounge", "siesta", "daybed"],
     featured: false,
-    image: "",
+    image: "/catalog/page_29_img_10.png",
     price: 0
   },
   {
@@ -467,7 +467,7 @@ export const products: Product[] = [
     specs: { material: "Soundproofing acoustic panels, fabric", height: "1350mm high screen", configuration: "Face-to-face booth options" },
     tags: ["lounge", "adapt", "acoustic-booth"],
     featured: false,
-    image: "",
+    image: "/catalog/page_29_img_12.png",
     price: 0
   },
   {
@@ -478,7 +478,7 @@ export const products: Product[] = [
     specs: { material: "Knit wool fabric, tubular steel black legs", profile: "Low-slung", arms: "Integrated low arms" },
     tags: ["lounge", "antimo", "casual"],
     featured: false,
-    image: "",
+    image: "/catalog/page_29_img_14.png",
     price: 0
   },
   {
@@ -489,7 +489,7 @@ export const products: Product[] = [
     specs: { material: "Cold-cured foam, leather wrap", base: "Chrome four-star base", pivot: "Auto-return swivel" },
     tags: ["lounge", "adonis", "lobby"],
     featured: false,
-    image: "",
+    image: "/catalog/page_34_img_2.png",
     price: 0
   },
   {
@@ -500,7 +500,7 @@ export const products: Product[] = [
     specs: { material: "Solid mahogany legs, fine leatherette", backType: "Medium back padded", detail: "Button tufted backing" },
     tags: ["lounge", "classic-smart", "leather"],
     featured: false,
-    image: "",
+    image: "/catalog/page_34_img_4.png",
     price: 0
   },
   {
@@ -511,7 +511,7 @@ export const products: Product[] = [
     specs: { material: "Upholstered fabric shell, rubber feet", shape: "Circular", diameter: "450mm" },
     tags: ["lounge", "pouf", "stool"],
     featured: false,
-    image: "",
+    image: "/catalog/page_34_img_6.png",
     price: 0
   },
   {
@@ -522,7 +522,7 @@ export const products: Product[] = [
     specs: { material: "High density foam block, fabric", shape: "Square", size: "450x450mm" },
     tags: ["lounge", "pouf", "square"],
     featured: false,
-    image: "",
+    image: "/catalog/page_34_img_8.png",
     price: 0
   },
   {
@@ -533,7 +533,7 @@ export const products: Product[] = [
     specs: { material: "Tex-weave fabric, anti-slip base", shape: "Hexagonal", layout: "Honeycomb grouping ready" },
     tags: ["lounge", "pouf", "hexagonal"],
     featured: false,
-    image: "",
+    image: "/catalog/page_34_img_10.png",
     price: 0
   },
   {
@@ -544,7 +544,7 @@ export const products: Product[] = [
     specs: { material: "Double cushion foam, metal tube legs", shape: "Rectangular bench", length: "900mm" },
     tags: ["lounge", "pouf", "bench"],
     featured: false,
-    image: "",
+    image: "/catalog/page_34_img_12.png",
     price: 0
   },
   {
@@ -555,7 +555,7 @@ export const products: Product[] = [
     specs: { material: "Iron frame, wooden seat slab", baseType: "Square quadruped frame", height: "750mm" },
     tags: ["lounge", "bar-stool", "quad"],
     featured: false,
-    image: "",
+    image: "/catalog/page_34_img_14.png",
     price: 0
   },
   {
@@ -566,7 +566,7 @@ export const products: Product[] = [
     specs: { material: "Padded fabric, metal base plate", layout: "Row linked folding", desk: "Concealed writing pad" },
     tags: ["auditorium", "smart", "row-seating"],
     featured: false,
-    image: "",
+    image: "/catalog/page_34_img_15.jpg",
     price: 0
   },
   {
@@ -577,7 +577,7 @@ export const products: Product[] = [
     specs: { material: "Polyurethane foam backing, steel frame", layout: "Floor-mounted rows", mechanism: "Gravity spring fold" },
     tags: ["auditorium", "smart", "folding"],
     featured: false,
-    image: "",
+    image: "/catalog/page_34_img_16.jpg",
     price: 0
   },
   {
@@ -588,7 +588,7 @@ export const products: Product[] = [
     specs: { material: "Thick fabric cushioning, plastic outer shell", armrest: "Molded polyurethane with cup holder", structure: "Floor fixed dual legs" },
     tags: ["auditorium", "smart", "luxury"],
     featured: false,
-    image: "",
+    image: "/catalog/page_34_img_17.jpg",
     price: 0
   },
   {
@@ -599,7 +599,7 @@ export const products: Product[] = [
     specs: { material: "High density foam, steel support tubes", layout: "Linked row setting", size: "Slim layout profile" },
     tags: ["auditorium", "smart", "training"],
     featured: false,
-    image: "",
+    image: "/catalog/page_34_img_18.jpg",
     price: 0
   },
   {
@@ -610,7 +610,7 @@ export const products: Product[] = [
     specs: { material: "Fine leather sofas + veneer tables", configuration: "3-seater + 2 armchairs + center table", style: "Director prestige" },
     tags: ["lounge", "director", "cabin-set"],
     featured: true,
-    image: "",
+    image: "/catalog/page_35_img_1.jpg",
     price: 0
   },
 
@@ -623,7 +623,7 @@ export const products: Product[] = [
     specs: { material: "Available in CRCA Metal / Particle Wood", lock: "Central key cylinder lock", wheels: "5 swiveling castors" },
     tags: ["storage", "pedestal", "drawers"],
     featured: true,
-    image: "",
+    image: "/catalog/page_15_img_2.png",
     price: 0
   },
   {
@@ -634,7 +634,7 @@ export const products: Product[] = [
     specs: { material: "Melamine wood board", shelves: "4 adjustable shelves", lockType: "Dual key system" },
     tags: ["storage", "cupboard", "wooden"],
     featured: false,
-    image: "",
+    image: "/catalog/page_15_img_4.png",
     price: 0
   },
   {
@@ -645,7 +645,7 @@ export const products: Product[] = [
     specs: { material: "0.8mm CRCA steel sheet", finish: "Powder coated scratch-resistant", locking: "3-point locking vault mechanism" },
     tags: ["storage", "cupboard", "metal"],
     featured: true,
-    image: "",
+    image: "/catalog/page_17_img_2.png",
     price: 0
   },
   {
@@ -656,7 +656,7 @@ export const products: Product[] = [
     specs: { material: "Pre-lam particle board, steel pedestal", diameter: "900mm / 1050mm / 1200mm", baseType: "Cross base / Round plate" },
     tags: ["storage", "tables", "discussion"],
     featured: false,
-    image: "",
+    image: "/catalog/page_17_img_4.png",
     price: 0
   },
 
@@ -669,7 +669,7 @@ export const products: Product[] = [
     specs: { material: "Genuine upholstery leather, wood base", backType: "HB (High Back)", tilt: "Knee tilt locking mechanism" },
     tags: ["leather", "chair", "royale", "executive"],
     featured: true,
-    image: "",
+    image: "/catalog/page_17_img_2.png",
     price: 0
   },
   {
@@ -680,7 +680,7 @@ export const products: Product[] = [
     specs: { material: "Ribbed leatherette sling, aluminum structure", backType: "HB (High Back)", armrest: "Polished aluminum loop armrests" },
     tags: ["leather", "chair", "venus", "modern"],
     featured: false,
-    image: "",
+    image: "/catalog/page_17_img_4.png",
     price: 0
   },
   {
@@ -691,7 +691,7 @@ export const products: Product[] = [
     specs: { material: "Thick double cushion leatherette", backType: "HB (High Back)", base: "Solid teak wood cap base" },
     tags: ["leather", "chair", "boss", "cabin"],
     featured: true,
-    image: "",
+    image: "/catalog/page_17_img_6.png",
     price: 0
   },
   {
@@ -702,7 +702,7 @@ export const products: Product[] = [
     specs: { material: "Premium PU leather, steel base frame", backType: "HB (High Back)", tiltAngle: "Sync multi-lock" },
     tags: ["leather", "chair", "mayor", "hb"],
     featured: false,
-    image: "",
+    image: "/catalog/page_17_img_8.png",
     price: 0
   },
   {
@@ -713,7 +713,7 @@ export const products: Product[] = [
     specs: { material: "Premium PU leather, steel base frame", backType: "MB (Medium Back)", arms: "Fixed chrome loop arms" },
     tags: ["leather", "chair", "mayor", "mb"],
     featured: false,
-    image: "",
+    image: "/catalog/page_17_img_10.png",
     price: 0
   },
   {
@@ -724,7 +724,7 @@ export const products: Product[] = [
     specs: { material: "Premium PU leather, cantilever steel pipe", backType: "VC (Visitor Cantilever)", baseType: "Cantilever sled base" },
     tags: ["leather", "chair", "mayor", "visitor"],
     featured: false,
-    image: "",
+    image: "/catalog/page_17_img_12.png",
     price: 0
   },
   {
@@ -735,7 +735,7 @@ export const products: Product[] = [
     specs: { material: "Leatherette sling, steel bar structure", backType: "MB (Medium Back)", gasLift: "Class 4 pneumatic" },
     tags: ["leather", "chair", "libra", "swivel"],
     featured: false,
-    image: "",
+    image: "/catalog/page_17_img_14.png",
     price: 0
   },
   {
@@ -746,7 +746,7 @@ export const products: Product[] = [
     specs: { material: "Molded cushion foam, leatherette wrap", backType: "HB (High Back)", armType: "3D adjustable armrests" },
     tags: ["leather", "chair", "leap", "ergonomic"],
     featured: false,
-    image: "",
+    image: "/catalog/page_17_img_16.png",
     price: 0
   },
   {
@@ -757,7 +757,7 @@ export const products: Product[] = [
     specs: { material: "Molded cushion foam, leatherette wrap", backType: "VC (Visitor Cantilever)", base: "Heavy powder coated cantilever steel frame" },
     tags: ["leather", "chair", "leap", "visitor"],
     featured: false,
-    image: "",
+    image: "/catalog/page_17_img_18.png",
     price: 0
   },
 
@@ -770,7 +770,7 @@ export const products: Product[] = [
     specs: { material: "Korean mesh, nylon frame", backType: "HB (High Back)", armrest: "Adjustable T-arms" },
     tags: ["mesh", "chair", "classic", "imported"],
     featured: false,
-    image: "",
+    image: "/catalog/page_18_img_2.png",
     price: 0
   },
   {
@@ -781,7 +781,7 @@ export const products: Product[] = [
     specs: { material: "Korean mesh, nylon frame", backType: "MB (Medium Back)", base: "Heavy duty nylon star base" },
     tags: ["mesh", "chair", "classic", "mid-back"],
     featured: false,
-    image: "",
+    image: "/catalog/page_19_img_1.jpg",
     price: 0
   },
   {
@@ -792,7 +792,7 @@ export const products: Product[] = [
     specs: { material: "Polyester mesh, fabric seat cushion", backType: "HB (High Back)", lumbar: "Adjustable height lumbar belt" },
     tags: ["mesh", "chair", "classic-a", "domestic"],
     featured: false,
-    image: "",
+    image: "/catalog/page_19_img_2.jpg",
     price: 0
   },
   {
@@ -803,7 +803,7 @@ export const products: Product[] = [
     specs: { material: "Polyester mesh, fabric seat cushion", backType: "MB (Medium Back)", armType: "Fixed loop arms" },
     tags: ["mesh", "chair", "classic-a", "mid-back"],
     featured: false,
-    image: "",
+    image: "/catalog/page_19_img_3.jpg",
     price: 0
   },
   {
@@ -814,7 +814,7 @@ export const products: Product[] = [
     specs: { material: "Mesh fabric back, nylon skeleton", backType: "HB (High Back)", tilt: "Simple center tilt" },
     tags: ["mesh", "chair", "classic-b", "domestic"],
     featured: false,
-    image: "",
+    image: "/catalog/page_19_img_4.jpg",
     price: 0
   },
   {
@@ -825,7 +825,7 @@ export const products: Product[] = [
     specs: { material: "Mesh fabric back, nylon skeleton", backType: "MB (Medium Back)", base: "Powder coated metal star base" },
     tags: ["mesh", "chair", "classic-b", "mid-back"],
     featured: false,
-    image: "",
+    image: "/catalog/page_19_img_5.jpg",
     price: 0
   },
   {
@@ -836,7 +836,7 @@ export const products: Product[] = [
     specs: { material: "High density breathable mesh, metal core", backType: "HB (High Back)", lumbar: "Adaptive lumbar matrix support", armrest: "3D height & angle adjustable" },
     tags: ["mesh", "chair", "aeron", "orthopedic", "ergonomic"],
     featured: true,
-    image: "",
+    image: "/catalog/page_19_img_6.jpg",
     price: 0
   },
   {
@@ -847,7 +847,7 @@ export const products: Product[] = [
     specs: { material: "High density breathable mesh", backType: "MB (Medium Back)", lumbar: "Manual depth lumbar pad" },
     tags: ["mesh", "chair", "aeron", "mid-back"],
     featured: false,
-    image: "",
+    image: "/catalog/page_19_img_7.jpg",
     price: 0
   },
   {
@@ -858,7 +858,7 @@ export const products: Product[] = [
     specs: { material: "Korean mesh, cantilever steel tube base", backType: "VC (Visitor Cantilever)", armrest: "Fixed arms" },
     tags: ["mesh", "chair", "aeron", "visitor"],
     featured: false,
-    image: "",
+    image: "/catalog/page_19_img_8.jpg",
     price: 0
   },
   {
@@ -869,7 +869,7 @@ export const products: Product[] = [
     specs: { material: "Imported mesh, nylon framework", backType: "HB (High Back)", tiltType: "Any-position locking tilt" },
     tags: ["mesh", "chair", "matrix", "ergonomic"],
     featured: false,
-    image: "",
+    image: "/catalog/page_19_img_9.jpg",
     price: 0
   },
   {
@@ -880,7 +880,7 @@ export const products: Product[] = [
     specs: { material: "Imported mesh, nylon framework", backType: "MB (Medium Back)", base: "Nylon star base" },
     tags: ["mesh", "chair", "matrix", "mid-back"],
     featured: true,
-    image: "",
+    image: "/catalog/page_20_img_2.png",
     price: 0
   },
   {
@@ -891,7 +891,7 @@ export const products: Product[] = [
     specs: { material: "Mesh backing, steel tubing", backType: "VC (Visitor Cantilever)", arms: "Padded arm rests" },
     tags: ["mesh", "chair", "matrix", "visitor"],
     featured: false,
-    image: "",
+    image: "/catalog/page_20_img_4.png",
     price: 0
   },
   {
@@ -902,7 +902,7 @@ export const products: Product[] = [
     specs: { material: "Glass-filled nylon frame, breathable mesh", backType: "HB (High Back)", mechanism: "Self-weight regulating synchro tilt" },
     tags: ["mesh", "chair", "astra", "lumbar"],
     featured: false,
-    image: "",
+    image: "/catalog/page_20_img_6.png",
     price: 0
   },
   {
@@ -913,7 +913,7 @@ export const products: Product[] = [
     specs: { material: "Glass-filled nylon frame, mesh", backType: "MB (Medium Back)", lumbarSupport: "Auto adjustable lumbar" },
     tags: ["mesh", "chair", "astra", "mid-back"],
     featured: false,
-    image: "",
+    image: "/catalog/page_20_img_8.png",
     price: 0
   },
   {
@@ -924,7 +924,7 @@ export const products: Product[] = [
     specs: { material: "Mesh back, black powder coated sled frame", backType: "VC (Visitor Cantilever)", arms: "Fixed T-arms" },
     tags: ["mesh", "chair", "astra", "visitor"],
     featured: false,
-    image: "",
+    image: "/catalog/page_20_img_10.png",
     price: 0
   },
   {
@@ -935,7 +935,7 @@ export const products: Product[] = [
     specs: { material: "Colored mesh fabric, plastic frame", backType: "MB (Medium Back)", colorOptions: "Red / Blue / Grey / Black" },
     tags: ["mesh", "chair", "amaze", "colors"],
     featured: false,
-    image: "",
+    image: "/catalog/page_21_img_2.png",
     price: 0
   },
   {
@@ -946,7 +946,7 @@ export const products: Product[] = [
     specs: { material: "Heavy-duty mesh, flexible plastic frame", backType: "HB (High Back)", structure: "Butterfly-wing adjustable lumbar panels" },
     tags: ["mesh", "chair", "butterfly", "posture"],
     featured: true,
-    image: "",
+    image: "/catalog/page_21_img_4.png",
     price: 0
   },
   {
@@ -957,7 +957,7 @@ export const products: Product[] = [
     specs: { material: "Nylon mesh, metal base structure", backType: "MB (Medium Back)", lockType: "Single position lock" },
     tags: ["mesh", "chair", "divine", "workstation"],
     featured: false,
-    image: "",
+    image: "/catalog/page_21_img_5.jpg",
     price: 0
   },
   {
@@ -968,7 +968,7 @@ export const products: Product[] = [
     specs: { material: "Strong mesh, heavy nylon core", backType: "HB (High Back)", armrest: "2D height adjustable" },
     tags: ["mesh", "chair", "excel", "high-back"],
     featured: false,
-    image: "",
+    image: "/catalog/page_21_img_6.jpg",
     price: 0
   },
   {
@@ -979,7 +979,7 @@ export const products: Product[] = [
     specs: { material: "Strong mesh, heavy nylon core", backType: "MB (Medium Back)", mechanism: "Synchro tilt mechanism" },
     tags: ["mesh", "chair", "excel", "mid-back"],
     featured: false,
-    image: "",
+    image: "/catalog/page_21_img_8.png",
     price: 0
   },
   {
@@ -990,7 +990,7 @@ export const products: Product[] = [
     specs: { material: "Mesh, cantilever steel frame", backType: "VC (Visitor Cantilever)", arms: "Polished loop arms" },
     tags: ["mesh", "chair", "excel", "visitor"],
     featured: false,
-    image: "",
+    image: "/catalog/page_21_img_10.png",
     price: 0
   },
   {
@@ -1001,7 +1001,7 @@ export const products: Product[] = [
     specs: { material: "Mesh fabric backrest, fabric seat cushion", backType: "HB (High Back)", supportType: "Integrated headrest" },
     tags: ["mesh", "chair", "focus", "headrest"],
     featured: false,
-    image: "",
+    image: "/catalog/page_18_img_2.png",
     price: 0
   },
   {
@@ -1012,7 +1012,7 @@ export const products: Product[] = [
     specs: { material: "Mesh fabric backrest, fabric seat", backType: "MB (Medium Back)", arms: "Padded adjustable T-arms" },
     tags: ["mesh", "chair", "focus", "mid-back"],
     featured: false,
-    image: "",
+    image: "/catalog/page_19_img_1.jpg",
     price: 0
   },
   {
@@ -1023,7 +1023,7 @@ export const products: Product[] = [
     specs: { material: "Mesh backrest, chrome sled frame", backType: "VC (Visitor Cantilever)", base: "Polished chrome steel cantilever" },
     tags: ["mesh", "chair", "focus", "visitor"],
     featured: false,
-    image: "",
+    image: "/catalog/page_19_img_2.jpg",
     price: 0
   },
   {
@@ -1034,7 +1034,7 @@ export const products: Product[] = [
     specs: { material: "Korean mesh, chrome core base", backType: "LB (Low Back)", styling: "Compact task chair" },
     tags: ["mesh", "chair", "zen", "low-back"],
     featured: false,
-    image: "",
+    image: "/catalog/page_19_img_3.jpg",
     price: 0
   },
   {
@@ -1045,7 +1045,7 @@ export const products: Product[] = [
     specs: { material: "Thin profile mesh wrap, steel frame", backType: "LB (Low Back)", base: "Nylon base wheels" },
     tags: ["mesh", "chair", "sleek", "low-back"],
     featured: false,
-    image: "",
+    image: "/catalog/page_19_img_4.jpg",
     price: 0
   },
   {
@@ -1056,7 +1056,7 @@ export const products: Product[] = [
     specs: { material: "Woven mesh back, cushion seat", backType: "LB (Low Back)", support: "Integrated lumbar mold" },
     tags: ["mesh", "chair", "bliss", "low-back"],
     featured: false,
-    image: "",
+    image: "/catalog/page_19_img_5.jpg",
     price: 0
   },
   {
@@ -1067,7 +1067,7 @@ export const products: Product[] = [
     specs: { material: "Nylon mesh, fabric seat cushion", backType: "LB (Low Back)", mechanism: "Standard single lever lock" },
     tags: ["mesh", "chair", "smart", "low-back"],
     featured: false,
-    image: "",
+    image: "/catalog/page_19_img_6.jpg",
     price: 0
   },
   {
@@ -1078,7 +1078,7 @@ export const products: Product[] = [
     specs: { material: "Basic mesh screen, foam cushion", backType: "LB (Low Back)", armrest: "Fixed PP arms" },
     tags: ["mesh", "chair", "plus", "budget"],
     featured: false,
-    image: "",
+    image: "/catalog/page_19_img_7.jpg",
     price: 0
   },
   {
@@ -1089,7 +1089,7 @@ export const products: Product[] = [
     specs: { material: "Elastic mesh, plastic frame base", backType: "LB (Low Back)", colorOptions: "Lime / Orange / Black" },
     tags: ["mesh", "chair", "spark", "colors"],
     featured: false,
-    image: "",
+    image: "/catalog/page_19_img_8.jpg",
     price: 0
   },
   {
@@ -1100,7 +1100,7 @@ export const products: Product[] = [
     specs: { material: "Mesh back, powder coated cantilever base", backType: "VC (Visitor Cantilever)", base: "Heavy sled tubing" },
     tags: ["mesh", "chair", "zen", "visitor"],
     featured: false,
-    image: "",
+    image: "/catalog/page_19_img_9.jpg",
     price: 0
   },
   {
@@ -1111,7 +1111,7 @@ export const products: Product[] = [
     specs: { material: "Mesh, heavy gauge steel base pipe", backType: "VC (Visitor Cantilever)", arms: "Loop arms" },
     tags: ["mesh", "chair", "smart", "visitor"],
     featured: false,
-    image: "",
+    image: "/catalog/page_20_img_2.png",
     price: 0
   },
   {
@@ -1122,7 +1122,7 @@ export const products: Product[] = [
     specs: { material: "Mesh, chrome coated steel tubing base", backType: "VC (Visitor Cantilever)", baseStyle: "Cantilever chrome frame" },
     tags: ["mesh", "chair", "sleek", "visitor"],
     featured: false,
-    image: "",
+    image: "/catalog/page_20_img_4.png",
     price: 0
   },
   {
@@ -1133,7 +1133,7 @@ export const products: Product[] = [
     specs: { material: "Elastic net fabric, tubular steel cantilever", backType: "VC (Visitor Cantilever)", frameColor: "Black powder coated" },
     tags: ["mesh", "chair", "netted", "visitor"],
     featured: false,
-    image: "",
+    image: "/catalog/page_20_img_6.png",
     price: 0
   },
   {
@@ -1144,7 +1144,7 @@ export const products: Product[] = [
     specs: { material: "Net backing, chrome sled frame", backType: "VC (Visitor Cantilever)", details: "Padded arm rests" },
     tags: ["mesh", "chair", "netted", "visitor"],
     featured: false,
-    image: "",
+    image: "/catalog/page_20_img_8.png",
     price: 0
   },
   {
@@ -1155,7 +1155,7 @@ export const products: Product[] = [
     specs: { material: "Stiff net weave, heavy base pipe", backType: "VC (Visitor Cantilever)", structure: "Ergonomic curved back frame" },
     tags: ["mesh", "chair", "netted", "visitor"],
     featured: false,
-    image: "",
+    image: "/catalog/page_20_img_10.png",
     price: 0
   },
   {
@@ -1166,7 +1166,7 @@ export const products: Product[] = [
     specs: { material: "Net backing, simple stackable frame base", backType: "VC (Visitor Cantilever)", storage: "Stackable" },
     tags: ["mesh", "chair", "netted", "visitor"],
     featured: false,
-    image: "",
+    image: "/catalog/page_21_img_2.png",
     price: 0
   },
   {
@@ -1177,7 +1177,7 @@ export const products: Product[] = [
     specs: { material: "Rexine upholstery, cantilever frame", backType: "VC (Visitor Cantilever)", base: "Thick gauge MS pipe cantilever" },
     tags: ["mesh", "chair", "rexine", "visitor"],
     featured: false,
-    image: "",
+    image: "/catalog/page_21_img_4.png",
     price: 0
   },
 
@@ -1190,7 +1190,7 @@ export const products: Product[] = [
     specs: { material: "Injected molded foam cushion, fabric wrap", backType: "HB (High Back)", lumbar: "Fitted dynamic lumbar cushion" },
     tags: ["cushion", "chair", "leap", "orthopedic"],
     featured: true,
-    image: "",
+    image: "/catalog/page_22_img_1.jpg",
     price: 0
   },
   {
@@ -1201,7 +1201,7 @@ export const products: Product[] = [
     specs: { material: "Molded foam cushion, fabric wrap", backType: "MB (Medium Back)", arms: "Height adjustable T-arms" },
     tags: ["cushion", "chair", "leap", "mid-back"],
     featured: false,
-    image: "",
+    image: "/catalog/page_22_img_2.jpg",
     price: 0
   },
   {
@@ -1212,7 +1212,7 @@ export const products: Product[] = [
     specs: { material: "Molded foam, cantilever steel tube", backType: "VC (Visitor Cantilever)", frame: "Powder coated black frame" },
     tags: ["cushion", "chair", "leap", "visitor"],
     featured: false,
-    image: "",
+    image: "/catalog/page_22_img_3.jpg",
     price: 0
   },
   {
@@ -1223,7 +1223,7 @@ export const products: Product[] = [
     specs: { material: "Soft foam, high grade fabric upholstery", backType: "HB (High Back)", mechanism: "Sync tilt multi lock" },
     tags: ["cushion", "chair", "sigma", "fabric"],
     featured: false,
-    image: "",
+    image: "/catalog/page_22_img_4.jpg",
     price: 0
   },
   {
@@ -1234,7 +1234,7 @@ export const products: Product[] = [
     specs: { material: "Soft foam, high grade fabric upholstery", backType: "MB (Medium Back)", arms: "Fixed nylon loop armrests" },
     tags: ["cushion", "chair", "sigma", "mid-back"],
     featured: false,
-    image: "",
+    image: "/catalog/page_22_img_5.jpg",
     price: 0
   },
   {
@@ -1245,7 +1245,7 @@ export const products: Product[] = [
     specs: { material: "Cushioned fabric seat back, cantilever tube", backType: "VC (Visitor Cantilever)", baseStyle: "Cantilever sled base" },
     tags: ["cushion", "chair", "sigma", "visitor"],
     featured: false,
-    image: "",
+    image: "/catalog/page_22_img_6.jpg",
     price: 0
   },
   {
@@ -1256,7 +1256,7 @@ export const products: Product[] = [
     specs: { material: "Medium density foam cushion, fabric", backType: "MB (Medium Back)", base: "Nylon base wheels" },
     tags: ["cushion", "chair", "nova", "compact"],
     featured: false,
-    image: "",
+    image: "/catalog/page_22_img_7.jpg",
     price: 0
   },
   {
@@ -1267,7 +1267,7 @@ export const products: Product[] = [
     specs: { material: "Cushioned fabric, MS pipe sled base", backType: "VC (Visitor Cantilever)", arms: "Fixed arms" },
     tags: ["cushion", "chair", "nova", "visitor"],
     featured: false,
-    image: "",
+    image: "/catalog/page_22_img_8.jpg",
     price: 0
   },
   {
@@ -1278,7 +1278,7 @@ export const products: Product[] = [
     specs: { material: "Foam seat back, fabric wrap", backType: "MB (Medium Back)", supportType: "Contoured back support" },
     tags: ["cushion", "chair", "charm", "operator"],
     featured: false,
-    image: "",
+    image: "/catalog/page_22_img_9.jpg",
     price: 0
   },
 
@@ -1291,7 +1291,7 @@ export const products: Product[] = [
     specs: { material: "Polypropylene body shell, steel base frame", writingTablet: "A4 size wooden board tablet", wheels: "Lockable castors" },
     tags: ["training", "flex", "writing-desk", "tablet"],
     featured: true,
-    image: "",
+    image: "/catalog/page_25_img_2.png",
     price: 0
   },
   {
@@ -1302,7 +1302,7 @@ export const products: Product[] = [
     specs: { material: "Mesh backing, polypropylene writing pad", storage: "Under-seat book basket rack", folding: "Tip-up seat for space saving" },
     tags: ["training", "eva", "mesh", "writing-desk"],
     featured: false,
-    image: "",
+    image: "/catalog/page_25_img_3.jpg",
     price: 0
   },
   {
@@ -1313,7 +1313,7 @@ export const products: Product[] = [
     specs: { material: "Molded foam cushion, study writing tablet", frame: "Powder coated MS steel tube frame", base: "Four legged static glides" },
     tags: ["training", "excel", "cushion"],
     featured: false,
-    image: "",
+    image: "/catalog/page_25_img_4.jpg",
     price: 0
   },
   {
@@ -1324,7 +1324,7 @@ export const products: Product[] = [
     specs: { material: "Perforated plastic backrest, metal tube", tablet: "Attached wood grain desk pad", base: "Under-seat wire rack grid" },
     tags: ["training", "judi", "plastic"],
     featured: false,
-    image: "",
+    image: "/catalog/page_25_img_5.jpg",
     price: 0
   },
   {
@@ -1335,7 +1335,7 @@ export const products: Product[] = [
     specs: { material: "Steel tubular frame, plywood seat", tabletSize: "Standard size wooden tablet", baseStyle: "Four legged static frame" },
     tags: ["training", "adams", "classic"],
     featured: false,
-    image: "",
+    image: "/catalog/page_25_img_6.jpg",
     price: 0
   },
   {
@@ -1346,7 +1346,7 @@ export const products: Product[] = [
     specs: { material: "Thick fabric padding, metal base frame", armrest: "Tablet on right arm pivot", structure: "Fixed floor glide legs" },
     tags: ["training", "sigma", "lecture"],
     featured: false,
-    image: "",
+    image: "/catalog/page_25_img_7.jpg",
     price: 0
   },
   {
@@ -1357,7 +1357,7 @@ export const products: Product[] = [
     specs: { material: "Korean mesh backing, plastic shell folding seat", writingPad: "Sturdy PP plastic tablet", mobility: "Rolling castor wheels" },
     tags: ["training", "flex", "mesh", "wheels"],
     featured: false,
-    image: "",
+    image: "/catalog/page_25_img_8.jpg",
     price: 0
   },
   {
@@ -1368,7 +1368,7 @@ export const products: Product[] = [
     specs: { material: "Cushioned leatherette back seat, metal frame", tablet: "Swivel writing wood board", luxuryStyle: "Padded arm rests" },
     tags: ["training", "leatherette", "executive"],
     featured: false,
-    image: "",
+    image: "/catalog/page_25_img_2.png",
     price: 0
   },
   {
@@ -1379,7 +1379,7 @@ export const products: Product[] = [
     specs: { material: "High impact polypropylene seat, metal base", rack: "Fitted wire book basket", layoutType: "Ergonomic shell body" },
     tags: ["training", "zudy", "shell-body"],
     featured: false,
-    image: "",
+    image: "/catalog/page_25_img_3.jpg",
     price: 0
   },
 
@@ -1392,7 +1392,7 @@ export const products: Product[] = [
     specs: { material: "Heavy-duty steel sheets, chrome plating", layout: "2-Seater link beam", legs: "Chrome splayed legs" },
     tags: ["waiting", "apollo", "link-chair", "2-seater"],
     featured: false,
-    image: "",
+    image: "/catalog/page_26_img_1.jpg",
     price: 0
   },
   {
@@ -1403,7 +1403,7 @@ export const products: Product[] = [
     specs: { material: "Perforated steel sheets, chrome trims", layout: "3-Seater link beam", armrests: "Integrated chrome armrests" },
     tags: ["waiting", "apollo", "link-chair", "3-seater"],
     featured: true,
-    image: "",
+    image: "/catalog/page_26_img_2.jpg",
     price: 0
   },
   {
@@ -1414,7 +1414,7 @@ export const products: Product[] = [
     specs: { material: "High density foam, steel beam, fabric", layout: "2-Seater upholstered beam", structure: "Four legged beam base" },
     tags: ["waiting", "genesis", "fabric", "2-seater"],
     featured: false,
-    image: "",
+    image: "/catalog/page_26_img_3.jpg",
     price: 0
   },
   {
@@ -1425,7 +1425,7 @@ export const products: Product[] = [
     specs: { material: "Foam cushions, steel beam, fabric cover", layout: "3-Seater upholstered beam", paddingThickness: "40mm" },
     tags: ["waiting", "genesis", "fabric", "3-seater"],
     featured: false,
-    image: "",
+    image: "/catalog/page_26_img_4.jpg",
     price: 0
   },
   {
@@ -1436,7 +1436,7 @@ export const products: Product[] = [
     specs: { material: "Leatherette upholstery, solid wood internals", layout: "2-Seater cushioned block", legs: "Chrome square legs" },
     tags: ["waiting", "gracial-c", "cushioned", "2-seater"],
     featured: false,
-    image: "",
+    image: "/catalog/page_26_img_5.jpg",
     price: 0
   },
   {
@@ -1447,7 +1447,7 @@ export const products: Product[] = [
     specs: { material: "Leatherette upholstery, wood frames", layout: "3-Seater cushioned block", foamType: "Molded super soft foam" },
     tags: ["waiting", "gracial-c", "cushioned", "3-seater"],
     featured: false,
-    image: "",
+    image: "/catalog/page_26_img_6.jpg",
     price: 0
   },
   {
@@ -1458,7 +1458,7 @@ export const products: Product[] = [
     specs: { material: "Fine leatherette wrapping, chrome base", layout: "2-Seater backless bench", styling: "Minimalist lobby block" },
     tags: ["waiting", "gracial", "backless", "2-seater"],
     featured: false,
-    image: "",
+    image: "/catalog/page_26_img_7.jpg",
     price: 0
   },
   {
@@ -1469,7 +1469,7 @@ export const products: Product[] = [
     specs: { material: "Leatherette, chrome square frame", layout: "3-Seater backless bench", width: "1500mm" },
     tags: ["waiting", "gracial", "backless", "3-seater"],
     featured: false,
-    image: "",
+    image: "/catalog/page_26_img_8.jpg",
     price: 0
   },
   {
@@ -1480,7 +1480,7 @@ export const products: Product[] = [
     specs: { material: "Fiberglass reinforced plastic shells, steel", layout: "2-Seater beam chair", shellColor: "Blue / Orange / Red" },
     tags: ["waiting", "paulo", "plastic", "2-seater"],
     featured: false,
-    image: "",
+    image: "/catalog/page_26_img_9.jpg",
     price: 0
   },
   {
@@ -1491,7 +1491,7 @@ export const products: Product[] = [
     specs: { material: "FRP plastic shells, heavy duty metal beam", layout: "3-Seater beam chair", details: "Highly weather resistant" },
     tags: ["waiting", "paulo", "plastic", "3-seater"],
     featured: false,
-    image: "",
+    image: "/catalog/page_27_img_1.jpg",
     price: 0
   },
   {
@@ -1502,7 +1502,7 @@ export const products: Product[] = [
     specs: { material: "Padded fabric / PU leather, wood frame", layout: "1-Seater cubic block", base: "Chrome cylindrical pegs" },
     tags: ["waiting", "metro-sofa", "single-seater"],
     featured: false,
-    image: "",
+    image: "/catalog/page_27_img_2.jpg",
     price: 0
   },
   {
@@ -1513,7 +1513,7 @@ export const products: Product[] = [
     specs: { material: "Upholstered seat cushions, internal wood base", layout: "2-Seater block sofa", width: "1200mm" },
     tags: ["waiting", "metro-sofa", "2-seater"],
     featured: false,
-    image: "",
+    image: "/catalog/page_27_img_3.jpg",
     price: 0
   },
   {
@@ -1524,7 +1524,7 @@ export const products: Product[] = [
     specs: { material: "Deep foam padding, wood frame, PU leather", layout: "3-Seater block sofa", width: "1800mm" },
     tags: ["waiting", "metro-sofa", "3-seater"],
     featured: false,
-    image: "",
+    image: "/catalog/page_27_img_4.jpg",
     price: 0
   },
   {
@@ -1535,7 +1535,7 @@ export const products: Product[] = [
     specs: { material: "Steel internal supports, high density foam", layout: "4-Seater modular bench sofa", width: "2400mm" },
     tags: ["waiting", "metro-sofa", "4-seater"],
     featured: false,
-    image: "",
+    image: "/catalog/page_27_img_5.jpg",
     price: 0
   },
   {
@@ -1546,7 +1546,7 @@ export const products: Product[] = [
     specs: { material: "Solid hardwood frame, chrome pipe base", layout: "5-Seater modular bench sofa", width: "3000mm" },
     tags: ["waiting", "metro-sofa", "5-seater"],
     featured: false,
-    image: "",
+    image: "/catalog/page_27_img_6.jpg",
     price: 0
   },
 
