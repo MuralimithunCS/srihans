@@ -332,6 +332,7 @@ export const ContactForm: React.FC = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="Srihans Showroom Location Map"
+              suppressHydrationWarning={true}
             />
           </div>
         </div>

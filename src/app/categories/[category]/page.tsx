@@ -133,7 +133,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                       </span>
                     )}
                     <img
-                      src={product.image}
+                      src={product.image || "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'><path d='M4 18v3h16v-3M6 10h12M5 5h14v5H5zM8 21v-3h8v3'/></svg>"}
                       alt={product.name}
                       className="max-h-[140px] object-contain transition-transform duration-500 group-hover:scale-105"
                     />

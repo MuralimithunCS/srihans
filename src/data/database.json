@@ -1,5 +1,48 @@
 {
-  "quotes": [],
+  "quotes": [
+    {
+      "id": "SRI-208619",
+      "date": "2026-05-28T05:46:48.619Z",
+      "contactDetails": {
+        "name": "Muralimithun CS",
+        "company": "Nagarjuna group of instutions",
+        "phone": "09741488780",
+        "email": "1nc24cd032@ncetmail.com",
+        "message": ""
+      },
+      "items": [
+        {
+          "product": {
+            "name": "Colors L Shape Workstation",
+            "price": 0
+          },
+          "quantity": 2
+        }
+      ],
+      "status": "Pending"
+    },
+    {
+      "id": "SRI-885348",
+      "date": "2026-05-28T05:41:25.348Z",
+      "contactDetails": {
+        "name": "Muralimithun CS",
+        "company": "Nagarjuna group of instutions",
+        "phone": "09741488780",
+        "email": "1nc24cd032@ncetmail.com",
+        "message": ""
+      },
+      "items": [
+        {
+          "product": {
+            "name": "Direct Inquiry: WORKSTATIONS",
+            "price": 0
+          },
+          "quantity": 1
+        }
+      ],
+      "status": "Answered"
+    }
+  ],
   "hiddenProductIds": [],
   "customProducts": []
 }
