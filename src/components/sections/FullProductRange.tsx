@@ -2,26 +2,33 @@
 
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
-import { products } from "@/data/products";
+import { products as staticProducts } from "@/data/products";
 import { categories } from "@/data/categories";
 import { useQuoteCart } from "@/context/QuoteCartContext";
 import { Search, ShoppingBag, Eye, Star } from "lucide-react";
+import { Product } from "@/types";
 
-export const FullProductRange: React.FC = () => {
+interface FullProductRangeProps {
+  initialProducts?: Product[];
+}
+
+export const FullProductRange: React.FC<FullProductRangeProps> = ({ initialProducts }) => {
   const { addItem } = useQuoteCart();
   const [activeCategory, setActiveCategory] = useState("workstations");
   const [searchQuery, setSearchQuery] = useState("");
 
+  const allProducts = initialProducts || staticProducts;
+
   // Dynamically filter product database based on category and search query
   const filteredProducts = useMemo(() => {
-    return products.filter((product) => {
+    return allProducts.filter((product) => {
       const matchesCategory = product.category === activeCategory;
       const matchesSearch =
         product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         product.shortDescription.toLowerCase().includes(searchQuery.toLowerCase());
       return matchesCategory && (searchQuery ? matchesSearch : true);
     });
-  }, [activeCategory, searchQuery]);
+  }, [allProducts, activeCategory, searchQuery]);
 
   return (
     <section id="catalog" className="py-24 bg-white px-6 md:px-12 lg:px-20 border-b border-border">

@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { headers } from "next/headers";
 import nodemailer from "nodemailer";
 import { QuoteItem } from "@/types";
+import { saveQuote, SavedQuote } from "@/lib/db";
 
 // In-memory rate limiting map: IP -> timestamp arrays
 const ipInquiries = new Map<string, number[]>();
@@ -59,6 +60,24 @@ export async function POST(request: Request) {
     console.log("Inquired Items:", JSON.stringify(items, null, 2));
     console.log("=========================================");
 
+    const leadId = `SRI-${Date.now().toString().slice(-6)}`;
+
+    // Persist the quote request in database
+    const savedQuote: SavedQuote = {
+      id: leadId,
+      date: new Date().toISOString(),
+      contactDetails: {
+        name: contactDetails.name,
+        company: contactDetails.company || "",
+        phone: contactDetails.phone,
+        email: contactDetails.email || "",
+        message: contactDetails.message || "",
+      },
+      items,
+      status: "Pending",
+    };
+    await saveQuote(savedQuote);
+
     const smtpHost = process.env.SMTP_HOST;
     const smtpPort = parseInt(process.env.SMTP_PORT || "587", 10);
     const smtpUser = process.env.SMTP_USER;
@@ -70,7 +89,7 @@ export async function POST(request: Request) {
       return NextResponse.json({
         success: true,
         message: "Inquiry received and logged locally. Falling back to mock state because SMTP parameters are not set.",
-        leadId: `SRI-${Date.now().toString().slice(-6)}`,
+        leadId,
       });
     }
 
@@ -156,7 +175,7 @@ export async function POST(request: Request) {
     return NextResponse.json({
       success: true,
       message: "Quote inquiry email dispatched successfully.",
-      leadId: `SRI-${Date.now().toString().slice(-6)}`,
+      leadId,
     });
   } catch (err) {
     console.error("API route error:", err);

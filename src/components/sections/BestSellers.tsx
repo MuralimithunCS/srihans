@@ -2,11 +2,16 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { products } from "@/data/products";
+import { products as staticProducts } from "@/data/products";
 import { useQuoteCart } from "@/context/QuoteCartContext";
 import { Star, ShoppingBag, Eye } from "lucide-react";
+import { Product } from "@/types";
 
-export const BestSellers: React.FC = () => {
+interface BestSellersProps {
+  initialProducts?: Product[];
+}
+
+export const BestSellers: React.FC<BestSellersProps> = ({ initialProducts }) => {
   const { addItem } = useQuoteCart();
   const [activeTab, setActiveTab] = useState("all");
 
@@ -19,8 +24,10 @@ export const BestSellers: React.FC = () => {
     { id: "storage", label: "Storage" },
   ];
 
+  const allProducts = initialProducts || staticProducts;
+
   // We filter to showcase only marked best sellers in this section
-  const bestSellersList = products.filter((p) => p.featured);
+  const bestSellersList = allProducts.filter((p) => p.featured);
 
   const filteredProducts =
     activeTab === "all"

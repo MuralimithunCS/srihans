@@ -2,7 +2,8 @@ import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
 import { categories } from "@/data/categories";
-import { products } from "@/data/products";
+import { products as staticProducts } from "@/data/products";
+import { getCustomProducts, getHiddenIds } from "@/lib/db";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFAB } from "@/components/WhatsAppFAB";
@@ -56,8 +57,17 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     );
   }
 
+  // Fetch dynamic products data from database
+  const customProducts = await getCustomProducts();
+  const hiddenIds = await getHiddenIds();
+
+  // Merge and filter out hidden items
+  const allProducts = [...staticProducts, ...customProducts].filter(
+    (p) => !hiddenIds.includes(p.id)
+  );
+
   // Filter products matching this category
-  const categoryProducts = products.filter((p) => p.category === currentCategory.id);
+  const categoryProducts = allProducts.filter((p) => p.category === currentCategory.id);
 
   return (
     <>

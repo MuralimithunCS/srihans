@@ -8,6 +8,8 @@ import { StatsBand } from "@/components/sections/StatsBand";
 import { Lookbook } from "@/components/sections/Lookbook";
 import { ClientMarquee } from "@/components/sections/ClientMarquee";
 import { FullProductRange } from "@/components/sections/FullProductRange";
+import { products as staticProducts } from "@/data/products";
+import { getCustomProducts, getHiddenIds } from "@/lib/db";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { AboutBrand } from "@/components/sections/AboutBrand";
 import { ContactForm } from "@/components/sections/ContactForm";
@@ -17,7 +19,14 @@ import { MobileCTA } from "@/components/MobileCTA";
 import { BackToTop } from "@/components/BackToTop";
 import { QuoteCartDrawer } from "@/components/QuoteCartDrawer";
 
-export default function Home() {
+export default async function Home() {
+  const customProducts = await getCustomProducts();
+  const hiddenIds = await getHiddenIds();
+
+  const activeProducts = [...staticProducts, ...customProducts].filter(
+    (p) => !hiddenIds.includes(p.id)
+  );
+
   return (
     <>
       {/* Dynamic Header Navbar Shell */}
@@ -32,7 +41,7 @@ export default function Home() {
         <CategoriesGrid />
 
         {/* Section 4: Featured Products Best Sellers */}
-        <BestSellers />
+        <BestSellers initialProducts={activeProducts} />
 
         {/* Section 5: The Srihans Advantage */}
         <Advantage />
@@ -44,7 +53,7 @@ export default function Home() {
         <Lookbook />
 
         {/* Section 8: Full Catalog Range */}
-        <FullProductRange />
+        <FullProductRange initialProducts={activeProducts} />
 
         {/* Section 9: Client Logos Trust Band */}
         <ClientMarquee />
