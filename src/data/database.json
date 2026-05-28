@@ -1,6 +1,27 @@
 {
   "quotes": [
     {
+      "id": "SRI-733722",
+      "date": "2026-05-28T06:12:13.722Z",
+      "contactDetails": {
+        "name": "Muralimithun CS",
+        "company": "Nagarjuna group of instutions",
+        "phone": "09741488780",
+        "email": "1nc24cd032@ncetmail.com",
+        "message": "i want it for 20.000"
+      },
+      "items": [
+        {
+          "product": {
+            "name": "CEO Cabin Executive Table",
+            "price": 0
+          },
+          "quantity": 1
+        }
+      ],
+      "status": "Under Review"
+    },
+    {
       "id": "SRI-208619",
       "date": "2026-05-28T05:46:48.619Z",
       "contactDetails": {
@@ -19,7 +40,7 @@
           "quantity": 2
         }
       ],
-      "status": "Pending"
+      "status": "Answered"
     },
     {
       "id": "SRI-885348",

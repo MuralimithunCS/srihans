@@ -27,25 +27,29 @@ const LOCAL_DB_PATH = path.join(process.cwd(), "src", "data", "database.json");
 
 const useKv = !!(process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN);
 
+let memoryDb: LocalDB | null = null;
+
 // Helper to read local JSON database
 async function readLocalDB(): Promise<LocalDB> {
+  if (memoryDb) {
+    return memoryDb;
+  }
+
   try {
     const data = await fs.readFile(LOCAL_DB_PATH, "utf-8");
-    return JSON.parse(data);
+    memoryDb = JSON.parse(data);
+    return memoryDb!;
   } catch {
     // If running in vercel production read-only filesystem, fallback to memory
     const defaultDB: LocalDB = { quotes: [], hiddenProductIds: [], customProducts: [] };
-    try {
-      await writeLocalDB(defaultDB);
-    } catch {
-      // Ephemeral fallback
-    }
+    memoryDb = defaultDB;
     return defaultDB;
   }
 }
 
 // Helper to write local JSON database
 async function writeLocalDB(data: LocalDB): Promise<void> {
+  memoryDb = data;
   try {
     await fs.writeFile(LOCAL_DB_PATH, JSON.stringify(data, null, 2), "utf-8");
   } catch {
