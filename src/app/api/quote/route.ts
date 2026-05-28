@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+export const dynamic = "force-dynamic";
 import { headers } from "next/headers";
 import nodemailer from "nodemailer";
 import { QuoteItem } from "@/types";

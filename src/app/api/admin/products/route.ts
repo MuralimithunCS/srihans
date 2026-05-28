@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+export const dynamic = "force-dynamic";
 import { products as staticProducts } from "@/data/products";
 import { getCustomProducts, getHiddenIds, addCustomProduct, toggleProductVisibility } from "@/lib/db";
 import { Product } from "@/types";
