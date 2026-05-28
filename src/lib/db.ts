@@ -27,33 +27,58 @@ const LOCAL_DB_PATH = path.join(process.cwd(), "src", "data", "database.json");
 
 const useKv = !!(process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN);
 
-let memoryDb: LocalDB | null = null;
+const FREE_DB_URL = "https://kvdb.io/MuralimithunCS_srihans_v1/db_store";
 
 // Helper to read local JSON database
 async function readLocalDB(): Promise<LocalDB> {
-  if (memoryDb) {
-    return memoryDb;
+  // If running in development (localhost), use filesystem directly
+  const isDev = process.env.NODE_ENV === "development";
+  if (isDev) {
+    try {
+      const data = await fs.readFile(LOCAL_DB_PATH, "utf-8");
+      return JSON.parse(data);
+    } catch {
+      const defaultDB: LocalDB = { quotes: [], hiddenProductIds: [], customProducts: [] };
+      try {
+        await fs.writeFile(LOCAL_DB_PATH, JSON.stringify(defaultDB, null, 2), "utf-8");
+      } catch {}
+      return defaultDB;
+    }
   }
 
+  // If running in production (Vercel serverless) and no KV keys are present, use a free anonymous cloud KV
   try {
-    const data = await fs.readFile(LOCAL_DB_PATH, "utf-8");
-    memoryDb = JSON.parse(data);
-    return memoryDb!;
-  } catch {
-    // If running in vercel production read-only filesystem, fallback to memory
-    const defaultDB: LocalDB = { quotes: [], hiddenProductIds: [], customProducts: [] };
-    memoryDb = defaultDB;
-    return defaultDB;
+    const res = await fetch(FREE_DB_URL, { cache: "no-store" });
+    if (res.ok) {
+      const text = await res.text();
+      return JSON.parse(text);
+    }
+  } catch (err) {
+    console.error("Failed to read from free cloud database fallback:", err);
   }
+
+  return { quotes: [], hiddenProductIds: [], customProducts: [] };
 }
 
 // Helper to write local JSON database
 async function writeLocalDB(data: LocalDB): Promise<void> {
-  memoryDb = data;
+  const isDev = process.env.NODE_ENV === "development";
+  if (isDev) {
+    try {
+      await fs.writeFile(LOCAL_DB_PATH, JSON.stringify(data, null, 2), "utf-8");
+    } catch {}
+    return;
+  }
+
+  // Write to free anonymous cloud KV in production
   try {
-    await fs.writeFile(LOCAL_DB_PATH, JSON.stringify(data, null, 2), "utf-8");
-  } catch {
-    // Suppress write errors in read-only environment
+    await fetch(FREE_DB_URL, {
+      method: "PUT",
+      body: JSON.stringify(data),
+      headers: { "Content-Type": "application/json" },
+    });
+  } catch (err) {
+    console.error("Failed to write to free cloud database fallback:", err);
   }
 }
 
