@@ -27,7 +27,7 @@ const LOCAL_DB_PATH = path.join(process.cwd(), "src", "data", "database.json");
 
 const useKv = !!(process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN);
 
-const FREE_DB_URL = "https://kvdb.io/MuralimithunCS_srihans_v1/db_store";
+const FREE_DB_URL = "https://kvdb.io/Y1fkWSyK9btaAxorgnDw4A/db_store";
 
 // Helper to read local JSON database
 async function readLocalDB(): Promise<LocalDB> {
